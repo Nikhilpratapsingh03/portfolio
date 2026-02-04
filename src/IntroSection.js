@@ -1,3 +1,6 @@
+import Work from './components/Work';
+import WorkRoute from './components/WorkRoute';
+import { FeaturedWork } from './data/FeaturedWorks';
 import Footer from './Footer';
 import Header from './Header';
 import './intro.css';
@@ -45,6 +48,11 @@ function IntroSection() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="work-card-cont" >
+        {FeaturedWork.map((work, index) => (
+          <Work work={work} key={index} />
+        ))}
       </div>
       <Footer />
     </>

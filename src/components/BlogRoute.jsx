@@ -3,6 +3,7 @@ import { BlogsData } from "../data/BlogData";
 import styles from "../styles/blog.module.scss";
 import Blog from "./BlogCard";
 import Header from "../Header";
+import Footer from "../Footer";
 
 const BlogRoute = ({ params }) => {
     return (
@@ -16,6 +17,7 @@ const BlogRoute = ({ params }) => {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
